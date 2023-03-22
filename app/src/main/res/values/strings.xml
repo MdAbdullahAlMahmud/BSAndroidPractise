@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BSAndroidPractise</string>
+    <string name="hintAmountText">Enter amount in dollar</string>
+    <string name="converte">Converte</string>
 </resources>
