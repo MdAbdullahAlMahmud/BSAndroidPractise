@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private GridLayout gridLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
     public  void  phraseClickListener(View view){
         Button button = (Button) view;
+
+        String fileName = button.getTag().toString();
+        MediaPlayer mPlayer = MediaPlayer.create(this, getResources().getIdentifier(fileName, "raw", getPackageName()));
+        mPlayer.start();
         Toast.makeText(this, ""+ button.getTag(), Toast.LENGTH_SHORT).show();
     }
 

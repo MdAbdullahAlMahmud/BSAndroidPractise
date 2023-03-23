@@ -20,66 +20,57 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:onClick="phraseClickListener"
-            android:tag="hellowGerman"
-            android:text="Hellow"
+            android:tag="doyouspeakenglish"
+            android:text="Do you speak English"
             android:textAllCaps="false" />
 
         <Button
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:onClick="phraseClickListener"
-            android:tag="hiGerman"
-            android:text="Hi"
+            android:tag="goodevening"
+            android:text="Good Evening"
             android:textAllCaps="false" />
 
         <Button
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:onClick="phraseClickListener"
-            android:tag="byeGerman"
-            android:text="Bye"
+            android:tag="hello"
+            android:text="Hello"
             android:textAllCaps="false" />
 
         <Button
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:onClick="phraseClickListener"
-            android:tag="yesGerman"
-            android:text="Yes"
+            android:tag="howareyou"
+            android:text="How are you ?"
             android:textAllCaps="false" />
 
         <Button
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:onClick="phraseClickListener"
-            android:tag="noGerman"
-            android:text="No"
+            android:tag="mynameis"
+            android:text="My name is "
             android:textAllCaps="false" />
 
         <Button
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:onClick="phraseClickListener"
-            android:tag="welcomeGerman"
-            android:text="Welcome"
+            android:tag="please"
+            android:text="Please"
             android:textAllCaps="false" />
 
         <Button
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:onClick="phraseClickListener"
-            android:tag="androidGerman"
-            android:text="Android"
+            android:tag="welcome"
+            android:text="welcome"
             android:textAllCaps="false" />
-
-        <Button
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:onClick="phraseClickListener"
-            android:tag="javaGerman"
-            android:text="Java"
-            android:textAllCaps="false" />
-
 
 
 
