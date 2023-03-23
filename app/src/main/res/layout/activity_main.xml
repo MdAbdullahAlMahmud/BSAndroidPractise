@@ -1,54 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/audioSeekBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:useDefaultMargins="true"
+        android:rowCount="4"
+        android:columnCount="2">
 
-        <TextView
-            android:id="@+id/currentVolumeTV"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Current Volume " />
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="phraseClickListener"
+            android:tag="hellowGerman"
+            android:text="Hellow"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="phraseClickListener"
+            android:tag="hiGerman"
+            android:text="Hi"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="phraseClickListener"
+            android:tag="byeGerman"
+            android:text="Bye"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="phraseClickListener"
+            android:tag="yesGerman"
+            android:text="Yes"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="phraseClickListener"
+            android:tag="noGerman"
+            android:text="No"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="phraseClickListener"
+            android:tag="welcomeGerman"
+            android:text="Welcome"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="phraseClickListener"
+            android:tag="androidGerman"
+            android:text="Android"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="phraseClickListener"
+            android:tag="javaGerman"
+            android:text="Java"
+            android:textAllCaps="false" />
 
 
-    </LinearLayout>
-    <Button
-        android:id="@+id/playButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Play"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/audioSeekBar" />
 
-    <Button
-        android:id="@+id/pauseButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pause"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playButton" />
 
-    <SeekBar
-        android:id="@+id/audioSeekBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </GridLayout>
+</LinearLayout>
